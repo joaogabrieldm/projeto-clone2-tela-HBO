@@ -10,7 +10,8 @@
     src: url(../fonts/Gilroy-ExtraBold.ttf);
 }
 
-*, a {
+*,
+a {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -19,25 +20,31 @@
     font-family: "Gilroy";
 }
 
-html, body {
+html,
+body {
     height: 100vh;
-    background-color: #030328;
+    background-color: #050544;
+    position: relative;
 }
 
 nav {
     display: flex;
     flex-flow: row nowrap;
+    width: 100%;
     justify-content: space-between;
     border: 1px solid white;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.562);
+    background-color: rgba(0, 0, 0, 0.726);
+    position: fixed;
+
+            
 }
 
-nav > img {
+nav>img {
     width: 130px;
 }
 
-nav > div {
+nav>div {
     border: 1px solid white;
     display: flex;
     justify-content: center;
@@ -51,6 +58,7 @@ nav a {
     align-self: center;
     text-align: center;
 }
+
 .botão {
     background-color: #B908F6;
     border-radius: 20px;
@@ -62,4 +70,67 @@ nav a {
     background-color: white;
     color: #3d044e;
     transition: 0.5s;
+}
+
+#container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#rm {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
+    margin-top: 60px;
+    height: 83vh;
+    background-color: black;
+    background-image: url(../imgs/RickAndMorty7_Takeover_mobile_alt_keyart.avif);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#rm > #foto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
+    align-items: center;
+    border: 1px solid white;
+}
+
+#rm > #foto > img {
+    border: 1px solid white;
+    width: 220px
+}
+
+div#textos {
+    width: 350px;
+    border: 1px solid white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: center;
+}
+
+div#hadline {
+    border: 1px solid white;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+div#textos > div#hadline > p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+div#textos > div#planos {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+div#textos > div#planos > div {
+    width: 50%;
+    height: 150px;
+    border: 1px solid white;
 }

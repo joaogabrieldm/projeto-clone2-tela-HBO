@@ -77,7 +77,7 @@ nav a {
     justify-content: end;
     height: 87vh;
     background-color: black;
-    background-image: url(https://hbomax-images.warnermediacdn.com/2023-09/RickAndMorty7_Takeover_mobile_alt_keyart.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=767);
+    background-image: url(../imgs/RickAndMorty7_Takeover_mobile_alt_keyart.avif);
     background-size: contain;
     background-repeat: no-repeat;
 }

@@ -24,7 +24,6 @@ html,
 body {
     height: 100vh;
     background-color: #050544;
-    position: relative;
 }
 
 nav {
@@ -32,12 +31,8 @@ nav {
     flex-flow: row nowrap;
     width: 100%;
     justify-content: space-between;
-    border: 1px solid white;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.726);
-    position: fixed;
-
-            
 }
 
 nav>img {
@@ -45,7 +40,6 @@ nav>img {
 }
 
 nav>div {
-    border: 1px solid white;
     display: flex;
     justify-content: center;
 }
@@ -81,8 +75,7 @@ nav a {
     display: flex;
     flex-flow: column nowrap;
     justify-content: end;
-    margin-top: 60px;
-    height: 83vh;
+    height: 87vh;
     background-color: black;
     background-image: url(../imgs/RickAndMorty7_Takeover_mobile_alt_keyart.avif);
     background-size: contain;
@@ -96,24 +89,20 @@ nav a {
     flex-flow: column nowrap;
     justify-content: end;
     align-items: center;
-    border: 1px solid white;
 }
 
 #rm > #foto > img {
-    border: 1px solid white;
     width: 220px
 }
 
 div#textos {
     width: 350px;
-    border: 1px solid white;
     display: flex;
     flex-flow: column nowrap;
     align-self: center;
 }
 
 div#hadline {
-    border: 1px solid white;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -132,5 +121,75 @@ div#textos > div#planos {
 div#textos > div#planos > div {
     width: 50%;
     height: 150px;
-    border: 1px solid white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    padding: 10px;
+}
+
+div#pm {
+background-image: linear-gradient(to top, black, transparent);}
+
+div#pm > p {
+    font-size: 1.2em;
+    text-align: right;
+    align-self: center;
+}
+
+div#pm > p#preco1 {
+    text-align: center;
+    font-size: 1.4em;
+    font-family: "Gilroy eb";
+}
+
+div#pa {
+    background-image: linear-gradient(to bottom, blueviolet, transparent);
+}
+
+div#pa > p#pay {
+    font-size: 1.2em;
+    text-align: left;
+    align-self: center;
+    margin: 15px 0px;
+}
+
+div#pa > p#preco2 {
+    text-align: center;
+    font-size: 1.4em;
+    font-family: "Gilroy eb";
+}
+
+div#pa > #economia {
+    width: 170px;
+    font-size: 0.8em;
+    padding: 1px 0px;
+    background-color: #B908F6;
+    text-align: center;
+    font-family: "Gilroy eb";
+    letter-spacing: 0.1em;
+    
+    transform: translate(10px, 10px);
+}
+
+#cta {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#cta > a {
+    background-color: #B908F6;
+    width: 80%;
+    text-align: center;
+    font-family: "Gilroy eb";
+    padding: 7px 0px;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+
+#cta > p {
+    text-align: center;
+    font-size: 0.7em;
+    margin-bottom: 10px;
 }
